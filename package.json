@@ -1,6 +1,6 @@
 {
   "name": "react-date-input",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Date Input Component built with and for React.js",
   "main": "lib/DateInput.js",
   "author": "Jed Watson",
