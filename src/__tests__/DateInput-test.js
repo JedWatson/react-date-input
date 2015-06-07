@@ -1,6 +1,7 @@
 'use strict';
 /*global describe, it, jest, expect*/
 
+jest.dontMock('moment');
 jest.dontMock('../DateInput');
 
 var React = require('react/addons');
@@ -16,8 +17,10 @@ describe('DateInput test', function() {
         <DateInput />
     );
 
+	var inputElement = TestUtils.findRenderedDOMComponentWithTag(instance, 'input');
+
 	it('should be rendered', function() {
-		expect(true).toEqual(true);
+		expect(inputElement.getDOMNode().parentNode.className).toEqual('DateInput');
 	});
 
 });
