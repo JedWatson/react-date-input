@@ -31,7 +31,7 @@ var DateSelect = React.createClass({
 			inputValue: e.target.value
 		});
 	},
-	handleBlur (e) {
+	handleBlur () {
 		var value = moment(this.state.inputValue, this.props.format);
 		this.props.onChange && this.props.onChange(value.isValid() ? value.toDate() : null);
 	},
